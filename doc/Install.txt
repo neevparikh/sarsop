@@ -27,18 +27,24 @@ Tested compilers:         gcc/g++ 4.0.1 under Linux
                           gcc/g++ 4.3.2 under Linux
                           gcc/g++ 4.4.0 under Linux
                           gcc/g++ 3.4.4 under Windows(Cygwin)
-                          Microsoft Visual C++ 9 in Visual Studio 2008 with SP1 under Windows
+                          Microsoft Visual C++ 9 in Visual Studio 2008 with SP1
+                          under Windows
 
 * General
   For gcc/g++ tool chain, GNU make is required for building.
 
 * Mac OS X
-  - For Mac OS X, physical memory size cannot be automatically determined yet. Currently APPL will assume 1G physical memory for Mac OS X. If your physical memory size is different, use "--memory" command-line option to set the correct memory limit.
+  - For Mac OS X, physical memory size cannot be automatically determined yet.
+    Currently APPL will assume 1G physical memory for Mac OS X. If your
+    physical memory size is different, use "--memory" command-line option to
+    set the correct memory limit.
   
-  - For Mac using PowerPC processor, remove the option "-msse2 -mfpmath=sse" from CFLAGS in src/Makefile.
+  - For Mac using PowerPC processor, remove the option "-msse2 -mfpmath=sse"
+    from CFLAGS in src/Makefile.
 
 * Windows (Visual Studio)
-  The Visual Studio port is still experimental. The generated binaries may behave differently from its Linux counterpart.
+  The Visual Studio port is still experimental. The generated binaries may
+  behave differently from its Linux counterpart.
 
 
 
@@ -72,7 +78,9 @@ COMPILATION UNDER WINDOWS USING MICROSOFT VISUAL STUDIO
 * Unpack the zip file
     Use WinZip/WinRAR/7-Zip
     
-    IMPORTANT: Please make sure that the path to the extracted files does NOT contain white space, or else Visual Studio will display linking error saying that it cannot locate some obj files
+    IMPORTANT: Please make sure that the path to the extracted files does NOT
+    contain white space, or else Visual Studio will display linking error
+    saying that it cannot locate some obj files
 
 * Build:
     Open the solution file : src\momdp.sln

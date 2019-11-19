@@ -3,13 +3,23 @@ Efficient Point-Based POMDP Planning by Approximating
 
 Approximate POMDP Planning (APPL) Toolkit
 
-APPL is a C++ implementation of the SARSOP algorithm <sup>1</sup>, using the factored MOMDP representation <sup>2</sup>. It takes as input a POMDP model in the POMDP or POMDPX file format and produces a policy file. It also contains a simple simulator for evaluating the quality of the computed policy. 
+APPL is a C++ implementation of the SARSOP algorithm <sup>1</sup>, using the
+factored MOMDP representation <sup>2</sup>. It takes as input a POMDP model in
+the POMDP or POMDPX file format and produces a policy file. It also contains a
+simple simulator for evaluating the quality of the computed policy. 
 
-[1] [**SARSOP: Efficient point-based POMDP planning by approximating optimally reachable belief spaces.**](http://www.roboticsproceedings.org/rss04/p9.pdf) *H. Kurniawati, D. Hsu, and W.S. Lee*. In Proc. Robotics: Science and Systems, 2008.
+[1] [**SARSOP: Efficient point-based POMDP planning by approximating optimally
+reachable belief spaces.**](http://www.roboticsproceedings.org/rss04/p9.pdf)
+*H. Kurniawati, D. Hsu, and W.S. Lee*. In Proc. Robotics: Science and Systems,
+2008.
 
-[2] [**POMDPs for robotic tasks with mixed observability.**](http://www.roboticsproceedings.org/rss05/p26.pdf) *S.C.W. Ong, S.W. Png, D. Hsu, and W.S. Lee*. In Proc. Robotics: Science and Systems, 2009.
+[2] [**POMDPs for robotic tasks with mixed
+observability.**](http://www.roboticsproceedings.org/rss05/p26.pdf) *S.C.W.
+Ong, S.W. Png, D. Hsu, and W.S. Lee*. In Proc. Robotics: Science and Systems,
+2009.
 
-[Copyright (c) 2008-2010 by National University of Singapore.](http://motion.comp.nus.edu.sg/projects/pomdp/pomdp.html)
+[Copyright (c) 2008-2010 by National University of
+Singapore.](http://motion.comp.nus.edu.sg/projects/pomdp/pomdp.html)
 
 
 ## Table of Contents
