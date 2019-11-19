@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<pomdpx
+        version="0.1"
+        id="monkey_playroom"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../doc/POMDPX/pomdpx.xsd">
+    <Description>Monkeys Playroom problem, 
+        goal: make the monkey scream
+        variables: 
+        - music player: must be on 
+        - bell: must be rung last 
+        - light: must be on (per room)
+        - ball: must be thrown at monkey 
+        - boxes: (3) one contains ball at start 
+        - robot: has position (room num), can hold ball and interact w obj
+    </Description>
+    <Discount>0.95</Discount>
+    <Variable>
+        <!-- Robot -->
+        <StateVar
+                vnamePrev="robot_0"
+                vnameCurr="robot_1"
+                fullyObs="true">
+            <NumValues>4</NumValues>
+        </StateVar>
+
+        <!-- Monkey -->
+        <StateVar
+                vnamePrev="monkey_0"
+                vnameCurr="monkey_1"
+                fullyObs="false">
+            <ValueEnum>quiet scream</ValueEnum>
+        </StateVar>
+
+        <!-- Bell -->
+        <StateVar
+                vnamePrev="bell_0"
+                vnameCurr="bell_1"
+                fullyObs="true">
+            <ValueEnum>off on</ValueEnum>
+        </StateVar>
+
+        <!-- Music Player -->
+        <StateVar
+                vnamePrev="music_0"
+                vnameCurr="music_1"
+                fullyObs="true">
+            <ValueEnum>off on</ValueEnum>
+        </StateVar>
+
+        <!-- Boxes -->
+        <StateVar
+                vnamePrev="room_0_box0_0"
+                vnameCurr="room_0_box0_1"
+                fullyObs="false">
+            <ValueEnum>closed_empty open_empty closed_full open_full</ValueEnum>
+        </StateVar>
+        <StateVar
+                vnamePrev="room_0_box1_0"
+                vnameCurr="room_0_box1_1"
+                fullyObs="false">
+            <ValueEnum>closed_empty open_empty closed_full open_full</ValueEnum>
+        </StateVar>
+        <StateVar
+                vnamePrev="room_0_box2_0"
+                vnameCurr="room_0_box2_1"
+                fullyObs="false">
+            <ValueEnum>closed_empty open_empty closed_full open_full</ValueEnum>
+        </StateVar>
+
+        <!-- Ball -->
+        <StateVar
+                vnamePrev="ball_0"
+                vnameCurr="ball_1"
+                fullyObs="false">
+            <ValueEnum>in_box in_hand thrown</ValueEnum>
+        </StateVar>
+
+        <!-- Lights -->
+        <StateVar
+                vnamePrev="room_0_light_0"
+                vnameCurr="room_0_light_1"
+                fullyObs="true">
+            <ValueEnum>on off</ValueEnum>
+        </StateVar>
+        <StateVar
+                vnamePrev="room_1_light_0"
+                vnameCurr="room_1_light_1"
+                fullyObs="true">
+            <ValueEnum>on off</ValueEnum>
+        </StateVar>
+        <StateVar
+                vnamePrev="room_2_light_0"
+                vnameCurr="room_2_light_1"
+                fullyObs="true">
+            <ValueEnum>on off</ValueEnum>
+        </StateVar>
+        <StateVar
+                vnamePrev="room_3_light_0"
+                vnameCurr="room_3_light_1"
+                fullyObs="true">
+            <ValueEnum>on off</ValueEnum>
+        </StateVar>
+
+        <!-- Reward -->
+        <RewardVar vname="reward monkey" />
+    </Variable>
+    <InitialStateBelief></InitialStateBelief>
+    <StateTransitionFunction></StateTransitionFunction>
+    <ObsFunction></ObsFunction>
+    <RewardFunction></RewardFunction>
+</pomdpx>
