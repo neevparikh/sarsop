@@ -80,25 +80,25 @@
         <StateVar
                 vnamePrev="room_0_light_0"
                 vnameCurr="room_0_light_1"
-                fullyObs="true">
+                fullyObs="false">
             <ValueEnum>on off</ValueEnum>
         </StateVar>
         <StateVar
                 vnamePrev="room_1_light_0"
                 vnameCurr="room_1_light_1"
-                fullyObs="true">
+                fullyObs="false">
             <ValueEnum>on off</ValueEnum>
         </StateVar>
         <StateVar
                 vnamePrev="room_2_light_0"
                 vnameCurr="room_2_light_1"
-                fullyObs="true">
+                fullyObs="false">
             <ValueEnum>on off</ValueEnum>
         </StateVar>
         <StateVar
                 vnamePrev="room_3_light_0"
                 vnameCurr="room_3_light_1"
-                fullyObs="true">
+                fullyObs="false">
             <ValueEnum>on off</ValueEnum>
         </StateVar>
 
